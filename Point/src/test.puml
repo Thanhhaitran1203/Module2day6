@@ -1,0 +1,28 @@
+@startuml
+'https://plantuml.com/class-diagram
+Point2D <|-- Point3D
+class Point2D {
+x: float
+y: float
+Point2D()
+Point2D(double x,double y)
+getX() :void
+getY() :void
+setX(float x)
+setY(float y)
+setXY(float x,float y)
+getXY() float [2]
+toString() String
+}
+class Point3D{
+z float
+Point3D()
+Point3D(float x,float y, float z)
+getZ() float
+setZ() float
+setXYZ(float x,y,z) void
+getXYZ() float[3]
+toString()
+}
+
+@enduml
